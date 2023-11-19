@@ -34,12 +34,11 @@ const ALLUSERS_RESPONSE: ResponseObject = {
 export class AllusersController {
   constructor(@inject(RestBindings.Http.REQUEST) private req: Request) { }
 
-  // Map to `GET /allusers`
   @get('/allusers')
   @response(200, ALLUSERS_RESPONSE)
   allusers(): object[] {
     const users: object[] = [
-      {id: 1, name: 'User 1'},
+      {id: 801311172, name: 'Shanmukh Gorle'},
       {id: 2, name: 'User 2'},
     ];
 
